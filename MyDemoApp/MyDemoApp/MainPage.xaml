@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyDemoApp"
+             x:Class="MyDemoApp.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="20" x:Name="label_void" Text="" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            </Label>
+            <Label FontSize="20" x:Name="label_result" Text="0" HorizontalOptions="End">
+            </Label>
+            <Grid HorizontalOptions="CenterAndExpand"  VerticalOptions="End" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+ 
+                </Grid.ColumnDefinitions>
+                <Button x:Name="button_1" Text="1" Grid.Row="0" Grid.Column="0" Clicked="button_clicked"/>
+                <Button x:Name="button_2" Text="2" Grid.Row="0" Grid.Column="1" Clicked="button_clicked"/>
+                <Button x:Name="button_3" Text="3" Grid.Row="0" Grid.Column="2" Clicked="button_clicked"/>
+                <Button x:Name="button_plus" Text="+" Grid.Row="0" Grid.Column="3" Clicked="button_clicked"/>
+                <Button x:Name="button_4" Text="4" Grid.Row="1" Grid.Column="0" Clicked="button_clicked"/>
+                <Button x:Name="button_5" Text="5" Grid.Row="1" Grid.Column="1" Clicked="button_clicked"/>
+                <Button x:Name="button_6" Text="6" Grid.Row="1" Grid.Column="2" Clicked="button_clicked"/>
+                <Button x:Name="button_minus" Text="-" Grid.Row="1" Grid.Column="3" Clicked="button_clicked"/>
+                <Button x:Name="button_7" Text="7" Grid.Row="2" Grid.Column="0" Clicked="button_clicked"/>
+                <Button x:Name="button_8" Text="8" Grid.Row="2" Grid.Column="1" Clicked="button_clicked"/>
+                <Button x:Name="button_9" Text="9" Grid.Row="2" Grid.Column="2" Clicked="button_clicked"/>
+                <Button x:Name="button_multiply" Text="*" Grid.Row="2" Grid.Column="3" Clicked="button_clicked"/>
+                <Button x:Name="button_dot" Text="." Grid.Row="3" Grid.Column="0" Clicked="button_clicked"/>
+                <Button x:Name="button_0" Text="0" Grid.Row="3" Grid.Column="1" Clicked="button_clicked"/>
+                <Button x:Name="button_equal" Text="=" Grid.Row="3" Grid.Column="2" Clicked="button_clicked"/>
+                <Button x:Name="button_divide" Text="/" Grid.Row="3" Grid.Column="3" Clicked="button_clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
